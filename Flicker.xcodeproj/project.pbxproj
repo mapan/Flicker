@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D72218715BC332400EF7DDE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D72218615BC332400EF7DDE /* MapKit.framework */; };
+		3D72218A15BC332D00EF7DDE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D72218915BC332D00EF7DDE /* CoreLocation.framework */; };
+		3D72218E15BC376400EF7DDE /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D72218C15BC376400EF7DDE /* FlickrFetcher.m */; };
+		3D8F9850159DE28600F5FF46 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8F984F159DE28600F5FF46 /* UIKit.framework */; };
+		3D8F9852159DE28600F5FF46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8F9851159DE28600F5FF46 /* Foundation.framework */; };
+		3D8F9854159DE28600F5FF46 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8F9853159DE28600F5FF46 /* CoreGraphics.framework */; };
+		3D8F985A159DE28600F5FF46 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D8F9858159DE28600F5FF46 /* InfoPlist.strings */; };
+		3D8F985C159DE28600F5FF46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8F985B159DE28600F5FF46 /* main.m */; };
+		3D8F9860159DE28700F5FF46 /* FlickerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8F985F159DE28700F5FF46 /* FlickerAppDelegate.m */; };
+		3D8F9863159DE28700F5FF46 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8F9861159DE28700F5FF46 /* MainStoryboard_iPhone.storyboard */; };
+		3D8F9866159DE28700F5FF46 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8F9864159DE28700F5FF46 /* MainStoryboard_iPad.storyboard */; };
+		3D8F9875159DE60B00F5FF46 /* TopPlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8F9874159DE60B00F5FF46 /* TopPlacesViewController.m */; };
+		3D8F9881159E88BF00F5FF46 /* SinglePlacePhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8F9880159E88BF00F5FF46 /* SinglePlacePhotosViewController.m */; };
+		3D9189EE15AA7E3F0026A5C7 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9189ED15AA7E3F0026A5C7 /* TabBarViewController.m */; };
+		3D99718815A2A4BB0043E6F6 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D99718715A2A4BB0043E6F6 /* PhotoViewController.m */; };
+		3D99719415A5D8F40043E6F6 /* RecentPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D99719315A5D8F40043E6F6 /* RecentPhotosViewController.m */; };
+		3D9971AD15A7B68E0043E6F6 /* 121-landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D9971AC15A7B68E0043E6F6 /* 121-landscape.png */; };
+		3D9971AF15A7B6D00043E6F6 /* 07-map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D9971AE15A7B6CF0043E6F6 /* 07-map-marker.png */; };
+		3D9971B115A7B92E0043E6F6 /* flickr-logo1-752338.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3D9971B015A7B92E0043E6F6 /* flickr-logo1-752338.jpeg */; };
+		3DF0520515C151CB00767EBD /* libSDWebImageARC+MKAnnotation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF0520115C1515300767EBD /* libSDWebImageARC+MKAnnotation.a */; };
+		3DF0520715C151FB00767EBD /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF0520615C151FB00767EBD /* ImageIO.framework */; };
+		3DF0523515C5355700767EBD /* AppRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF0523215C5355600767EBD /* AppRecord.m */; };
+		3DF0523615C5355700767EBD /* IconDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF0523415C5355700767EBD /* IconDownloader.m */; };
+		3DF0523915C5363300767EBD /* DownloadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF0523815C5363300767EBD /* DownloadImage.m */; };
+		3DF0523B15C5368600767EBD /* Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DF0523A15C5368600767EBD /* Placeholder.png */; };
+		3DFD9DB015BC513D00490602 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFD9DAF15BC513D00490602 /* MapViewController.m */; };
+		3DFD9DB415BC581000490602 /* TopPlacesAnnotations.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFD9DB315BC581000490602 /* TopPlacesAnnotations.m */; };
+		3DFD9DB715BD6BEE00490602 /* SinglePlacePhotosAnnotations.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFD9DB615BD6BEE00490602 /* SinglePlacePhotosAnnotations.m */; };
+		3DFD9DBA15BD70AC00490602 /* PhotoMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFD9DB915BD70AC00490602 /* PhotoMapViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DF051FC15C1515300767EBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DF051F315C1515200767EBD /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 53922D6F148C55820056699D;
+			remoteInfo = SDWebImage;
+		};
+		3DF051FE15C1515300767EBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DF051F315C1515200767EBD /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 53761325155AD0D5005750A4;
+			remoteInfo = "SDWebImage ARC";
+		};
+		3DF0520015C1515300767EBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DF051F315C1515200767EBD /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 531041E0157EAFA400BBABC3;
+			remoteInfo = "SDWebImage ARC+MKAnnotation";
+		};
+		3DF0520315C151B700767EBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DF051F315C1515200767EBD /* SDWebImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 531041C2157EAFA400BBABC3;
+			remoteInfo = "SDWebImage ARC+MKAnnotation";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D72218615BC332400EF7DDE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3D72218915BC332D00EF7DDE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3D72218B15BC376400EF7DDE /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
+		3D72218C15BC376400EF7DDE /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
+		3D72218D15BC376400EF7DDE /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
+		3D8F984B159DE28600F5FF46 /* Flicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D8F984F159DE28600F5FF46 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3D8F9851159DE28600F5FF46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3D8F9853159DE28600F5FF46 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3D8F9857159DE28600F5FF46 /* Flicker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flicker-Info.plist"; sourceTree = "<group>"; };
+		3D8F9859159DE28600F5FF46 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3D8F985B159DE28600F5FF46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D8F985D159DE28700F5FF46 /* Flicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flicker-Prefix.pch"; sourceTree = "<group>"; };
+		3D8F985E159DE28700F5FF46 /* FlickerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlickerAppDelegate.h; sourceTree = "<group>"; };
+		3D8F985F159DE28700F5FF46 /* FlickerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlickerAppDelegate.m; sourceTree = "<group>"; };
+		3D8F9862159DE28700F5FF46 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		3D8F9865159DE28700F5FF46 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		3D8F9873159DE60B00F5FF46 /* TopPlacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopPlacesViewController.h; sourceTree = "<group>"; };
+		3D8F9874159DE60B00F5FF46 /* TopPlacesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopPlacesViewController.m; sourceTree = "<group>"; };
+		3D8F987F159E88BF00F5FF46 /* SinglePlacePhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinglePlacePhotosViewController.h; sourceTree = "<group>"; };
+		3D8F9880159E88BF00F5FF46 /* SinglePlacePhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinglePlacePhotosViewController.m; sourceTree = "<group>"; };
+		3D9189EC15AA7E3F0026A5C7 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		3D9189ED15AA7E3F0026A5C7 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		3D9189EF15AA8A3E0026A5C7 /* SplitViewBarButtonItemPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplitViewBarButtonItemPresenter.h; sourceTree = "<group>"; };
+		3D99718615A2A4BB0043E6F6 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		3D99718715A2A4BB0043E6F6 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		3D99719215A5D8F40043E6F6 /* RecentPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentPhotosViewController.h; sourceTree = "<group>"; };
+		3D99719315A5D8F40043E6F6 /* RecentPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentPhotosViewController.m; sourceTree = "<group>"; };
+		3D9971AC15A7B68E0043E6F6 /* 121-landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "121-landscape.png"; sourceTree = "<group>"; };
+		3D9971AE15A7B6CF0043E6F6 /* 07-map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "07-map-marker.png"; sourceTree = "<group>"; };
+		3D9971B015A7B92E0043E6F6 /* flickr-logo1-752338.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "flickr-logo1-752338.jpeg"; sourceTree = "<group>"; };
+		3DF051F315C1515200767EBD /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = "../../../Downloads/rs-SDWebImage-c474512/SDWebImage.xcodeproj"; sourceTree = "<group>"; };
+		3DF0520615C151FB00767EBD /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		3DF0523115C5355600767EBD /* AppRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppRecord.h; sourceTree = "<group>"; };
+		3DF0523215C5355600767EBD /* AppRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppRecord.m; sourceTree = "<group>"; };
+		3DF0523315C5355700767EBD /* IconDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconDownloader.h; sourceTree = "<group>"; };
+		3DF0523415C5355700767EBD /* IconDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconDownloader.m; sourceTree = "<group>"; };
+		3DF0523715C5363200767EBD /* DownloadImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadImage.h; sourceTree = "<group>"; };
+		3DF0523815C5363300767EBD /* DownloadImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadImage.m; sourceTree = "<group>"; };
+		3DF0523A15C5368600767EBD /* Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Placeholder.png; sourceTree = "<group>"; };
+		3DFD9DAE15BC513D00490602 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		3DFD9DAF15BC513D00490602 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		3DFD9DB215BC581000490602 /* TopPlacesAnnotations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopPlacesAnnotations.h; sourceTree = "<group>"; };
+		3DFD9DB315BC581000490602 /* TopPlacesAnnotations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopPlacesAnnotations.m; sourceTree = "<group>"; };
+		3DFD9DB515BD6BEE00490602 /* SinglePlacePhotosAnnotations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinglePlacePhotosAnnotations.h; sourceTree = "<group>"; };
+		3DFD9DB615BD6BEE00490602 /* SinglePlacePhotosAnnotations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinglePlacePhotosAnnotations.m; sourceTree = "<group>"; };
+		3DFD9DB815BD70AC00490602 /* PhotoMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoMapViewController.h; sourceTree = "<group>"; };
+		3DFD9DB915BD70AC00490602 /* PhotoMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoMapViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D8F9848159DE28600F5FF46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF0520715C151FB00767EBD /* ImageIO.framework in Frameworks */,
+				3DF0520515C151CB00767EBD /* libSDWebImageARC+MKAnnotation.a in Frameworks */,
+				3D72218A15BC332D00EF7DDE /* CoreLocation.framework in Frameworks */,
+				3D72218715BC332400EF7DDE /* MapKit.framework in Frameworks */,
+				3D8F9850159DE28600F5FF46 /* UIKit.framework in Frameworks */,
+				3D8F9852159DE28600F5FF46 /* Foundation.framework in Frameworks */,
+				3D8F9854159DE28600F5FF46 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D8F9840159DE28400F5FF46 = {
+			isa = PBXGroup;
+			children = (
+				3DF0520615C151FB00767EBD /* ImageIO.framework */,
+				3DF051F315C1515200767EBD /* SDWebImage.xcodeproj */,
+				3D72218915BC332D00EF7DDE /* CoreLocation.framework */,
+				3D72218615BC332400EF7DDE /* MapKit.framework */,
+				3D8F9855159DE28600F5FF46 /* Flicker */,
+				3D8F984E159DE28600F5FF46 /* Frameworks */,
+				3D8F984C159DE28600F5FF46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D8F984C159DE28600F5FF46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D8F984B159DE28600F5FF46 /* Flicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D8F984E159DE28600F5FF46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D8F984F159DE28600F5FF46 /* UIKit.framework */,
+				3D8F9851159DE28600F5FF46 /* Foundation.framework */,
+				3D8F9853159DE28600F5FF46 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D8F9855159DE28600F5FF46 /* Flicker */ = {
+			isa = PBXGroup;
+			children = (
+				3D8F9861159DE28700F5FF46 /* MainStoryboard_iPhone.storyboard */,
+				3D8F9864159DE28700F5FF46 /* MainStoryboard_iPad.storyboard */,
+				3D9189EF15AA8A3E0026A5C7 /* SplitViewBarButtonItemPresenter.h */,
+				3D9189EC15AA7E3F0026A5C7 /* TabBarViewController.h */,
+				3D9189ED15AA7E3F0026A5C7 /* TabBarViewController.m */,
+				3D99718615A2A4BB0043E6F6 /* PhotoViewController.h */,
+				3D99718715A2A4BB0043E6F6 /* PhotoViewController.m */,
+				3D99719215A5D8F40043E6F6 /* RecentPhotosViewController.h */,
+				3D99719315A5D8F40043E6F6 /* RecentPhotosViewController.m */,
+				3D8F987F159E88BF00F5FF46 /* SinglePlacePhotosViewController.h */,
+				3D8F9880159E88BF00F5FF46 /* SinglePlacePhotosViewController.m */,
+				3D8F9873159DE60B00F5FF46 /* TopPlacesViewController.h */,
+				3D8F9874159DE60B00F5FF46 /* TopPlacesViewController.m */,
+				3DF0524415C8DF9700767EBD /* Map View Controllers */,
+				3DF0524615C8E0A200767EBD /* Asynchronous Download images */,
+				3D8F9856159DE28600F5FF46 /* Supporting Files */,
+			);
+			path = Flicker;
+			sourceTree = "<group>";
+		};
+		3D8F9856159DE28600F5FF46 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DF0523A15C5368600767EBD /* Placeholder.png */,
+				3D9971AC15A7B68E0043E6F6 /* 121-landscape.png */,
+				3D9971B015A7B92E0043E6F6 /* flickr-logo1-752338.jpeg */,
+				3D9971AE15A7B6CF0043E6F6 /* 07-map-marker.png */,
+				3D72218B15BC376400EF7DDE /* FlickrFetcher.h */,
+				3D72218C15BC376400EF7DDE /* FlickrFetcher.m */,
+				3D72218D15BC376400EF7DDE /* FlickrAPIKey.h */,
+				3D8F9857159DE28600F5FF46 /* Flicker-Info.plist */,
+				3D8F985E159DE28700F5FF46 /* FlickerAppDelegate.h */,
+				3D8F985F159DE28700F5FF46 /* FlickerAppDelegate.m */,
+				3D8F9858159DE28600F5FF46 /* InfoPlist.strings */,
+				3D8F985B159DE28600F5FF46 /* main.m */,
+				3D8F985D159DE28700F5FF46 /* Flicker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DF051F415C1515200767EBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DF051FD15C1515300767EBD /* libSDWebImage.a */,
+				3DF051FF15C1515300767EBD /* libSDWebImageARC.a */,
+				3DF0520115C1515300767EBD /* libSDWebImageARC+MKAnnotation.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DF0524415C8DF9700767EBD /* Map View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3DFD9DAE15BC513D00490602 /* MapViewController.h */,
+				3DFD9DAF15BC513D00490602 /* MapViewController.m */,
+				3DFD9DB215BC581000490602 /* TopPlacesAnnotations.h */,
+				3DFD9DB315BC581000490602 /* TopPlacesAnnotations.m */,
+				3DFD9DB815BD70AC00490602 /* PhotoMapViewController.h */,
+				3DFD9DB915BD70AC00490602 /* PhotoMapViewController.m */,
+				3DFD9DB515BD6BEE00490602 /* SinglePlacePhotosAnnotations.h */,
+				3DFD9DB615BD6BEE00490602 /* SinglePlacePhotosAnnotations.m */,
+			);
+			name = "Map View Controllers";
+			sourceTree = "<group>";
+		};
+		3DF0524615C8E0A200767EBD /* Asynchronous Download images */ = {
+			isa = PBXGroup;
+			children = (
+				3DF0523115C5355600767EBD /* AppRecord.h */,
+				3DF0523215C5355600767EBD /* AppRecord.m */,
+				3DF0523315C5355700767EBD /* IconDownloader.h */,
+				3DF0523415C5355700767EBD /* IconDownloader.m */,
+				3DF0523715C5363200767EBD /* DownloadImage.h */,
+				3DF0523815C5363300767EBD /* DownloadImage.m */,
+			);
+			name = "Asynchronous Download images";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D8F984A159DE28600F5FF46 /* Flicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D8F986C159DE28700F5FF46 /* Build configuration list for PBXNativeTarget "Flicker" */;
+			buildPhases = (
+				3D8F9847159DE28600F5FF46 /* Sources */,
+				3D8F9848159DE28600F5FF46 /* Frameworks */,
+				3D8F9849159DE28600F5FF46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DF0520415C151B700767EBD /* PBXTargetDependency */,
+			);
+			name = Flicker;
+			productName = Flicker;
+			productReference = 3D8F984B159DE28600F5FF46 /* Flicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D8F9842159DE28500F5FF46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Flicker;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Purdue;
+			};
+			buildConfigurationList = 3D8F9845159DE28500F5FF46 /* Build configuration list for PBXProject "Flicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3D8F9840159DE28400F5FF46;
+			productRefGroup = 3D8F984C159DE28600F5FF46 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3DF051F415C1515200767EBD /* Products */;
+					ProjectRef = 3DF051F315C1515200767EBD /* SDWebImage.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				3D8F984A159DE28600F5FF46 /* Flicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3DF051FD15C1515300767EBD /* libSDWebImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDWebImage.a;
+			remoteRef = 3DF051FC15C1515300767EBD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DF051FF15C1515300767EBD /* libSDWebImageARC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDWebImageARC.a;
+			remoteRef = 3DF051FE15C1515300767EBD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DF0520115C1515300767EBD /* libSDWebImageARC+MKAnnotation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libSDWebImageARC+MKAnnotation.a";
+			remoteRef = 3DF0520015C1515300767EBD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D8F9849159DE28600F5FF46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D8F985A159DE28600F5FF46 /* InfoPlist.strings in Resources */,
+				3D8F9863159DE28700F5FF46 /* MainStoryboard_iPhone.storyboard in Resources */,
+				3D8F9866159DE28700F5FF46 /* MainStoryboard_iPad.storyboard in Resources */,
+				3D9971AD15A7B68E0043E6F6 /* 121-landscape.png in Resources */,
+				3D9971AF15A7B6D00043E6F6 /* 07-map-marker.png in Resources */,
+				3D9971B115A7B92E0043E6F6 /* flickr-logo1-752338.jpeg in Resources */,
+				3DF0523B15C5368600767EBD /* Placeholder.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D8F9847159DE28600F5FF46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D8F985C159DE28600F5FF46 /* main.m in Sources */,
+				3D8F9860159DE28700F5FF46 /* FlickerAppDelegate.m in Sources */,
+				3D8F9875159DE60B00F5FF46 /* TopPlacesViewController.m in Sources */,
+				3D8F9881159E88BF00F5FF46 /* SinglePlacePhotosViewController.m in Sources */,
+				3D99718815A2A4BB0043E6F6 /* PhotoViewController.m in Sources */,
+				3D99719415A5D8F40043E6F6 /* RecentPhotosViewController.m in Sources */,
+				3D9189EE15AA7E3F0026A5C7 /* TabBarViewController.m in Sources */,
+				3D72218E15BC376400EF7DDE /* FlickrFetcher.m in Sources */,
+				3DFD9DB015BC513D00490602 /* MapViewController.m in Sources */,
+				3DFD9DB415BC581000490602 /* TopPlacesAnnotations.m in Sources */,
+				3DFD9DB715BD6BEE00490602 /* SinglePlacePhotosAnnotations.m in Sources */,
+				3DFD9DBA15BD70AC00490602 /* PhotoMapViewController.m in Sources */,
+				3DF0523515C5355700767EBD /* AppRecord.m in Sources */,
+				3DF0523615C5355700767EBD /* IconDownloader.m in Sources */,
+				3DF0523915C5363300767EBD /* DownloadImage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DF0520415C151B700767EBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SDWebImage ARC+MKAnnotation";
+			targetProxy = 3DF0520315C151B700767EBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D8F9858159DE28600F5FF46 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D8F9859159DE28600F5FF46 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3D8F9861159DE28700F5FF46 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D8F9862159DE28700F5FF46 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		3D8F9864159DE28700F5FF46 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D8F9865159DE28700F5FF46 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D8F986A159DE28700F5FF46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D8F986B159DE28700F5FF46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D8F986D159DE28700F5FF46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flicker/Flicker-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"”$(TARGET_BUILD_DIR)/usr/local/lib/include”/**",
+					/,
+					"”$(OBJROOT)/UninstalledProducts/include”/**",
+				);
+				INFOPLIST_FILE = "Flicker/Flicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3D8F986E159DE28700F5FF46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flicker/Flicker-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"”$(TARGET_BUILD_DIR)/usr/local/lib/include”/**",
+					/,
+					"”$(OBJROOT)/UninstalledProducts/include”/**",
+				);
+				INFOPLIST_FILE = "Flicker/Flicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D8F9845159DE28500F5FF46 /* Build configuration list for PBXProject "Flicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D8F986A159DE28700F5FF46 /* Debug */,
+				3D8F986B159DE28700F5FF46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D8F986C159DE28700F5FF46 /* Build configuration list for PBXNativeTarget "Flicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D8F986D159DE28700F5FF46 /* Debug */,
+				3D8F986E159DE28700F5FF46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D8F9842159DE28500F5FF46 /* Project object */;
+}
